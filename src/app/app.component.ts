@@ -7,4 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-angular';
+  student: Array<{ id: number, name: string }>
+  constructor() {
+    this.student = [
+      {
+        id:1,name:"Sankar"
+      },
+      {
+        id:2,name:"Sankar"
+      },
+      {
+        id:3,name:"Sankar"
+      },
+      {
+        id:1,name:"Sankar"
+      },
+    ]
+  }
+  
 }

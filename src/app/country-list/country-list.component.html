@@ -1,0 +1,17 @@
+<div class="country-list-wrapper">
+    <h1>Country List</h1>
+    <div class="row">
+        <ul class="col-md-4" *ngFor="let country of countryList.countries">
+            <li class="{{country.country.country_id}}">
+                <div class="{{country.country.country_id}}" (click)=getData(country.country.country_name)>{{country.country.country_name}}</div>
+            </li>
+        </ul>
+    </div>
+    <!-- <div class="row">
+        <ul class="col-md-4" *ngFor="let states of countryData.states">
+            <li class="{{states.name}}">
+                <div class="{{states.id}}" >{{states.name}}</div>
+            </li>
+        </ul>
+    </div> -->
+</div>
